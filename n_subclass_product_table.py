@@ -1,4 +1,4 @@
-from class_northwind import *
+from n_class_northwind import *
 
 
 class ProductTable(NorthwindCon):

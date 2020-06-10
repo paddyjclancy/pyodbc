@@ -28,7 +28,7 @@ print(query_result)
 # .fetchone() --> output next 1 pyodbc.Row -- remember cursor maintains state
 # if you want to get back to the start, you need a new cursor or to run the execute command again.
 print(query_result.fetchone()) # less one entry in the cursor
-print(query_result.fetchone()) # less one entry in the cursor 
+print(query_result.fetchone()) # less one entry in the cursor
 data_point_card = query_result.fetchone()
 
 # this one entry of data is a 'pyodbc.Row' object

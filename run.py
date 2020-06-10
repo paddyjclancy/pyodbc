@@ -1,4 +1,4 @@
-from subclass_product_table import *
+from n_subclass_product_table import *
 
 
 northwind = NorthwindCon()
