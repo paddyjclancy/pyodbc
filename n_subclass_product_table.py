@@ -12,7 +12,9 @@ class ProductTable(NorthwindCon):
         return self.sql_query('SELECT * FROM Products').fetchall()
 
     # Insert
-    def insert_row(self, product_id):
-        self.sql_query('INSERT INTO Products (ProductID) VALUES (' + str(product_id) + ')')
-        # return self.sql_query('SELECT * FROM Products WHERE ProductName=' + product_name).fetchone()
-        # self.connection.commit()
+    def insert_row(self, product_name, product_price, product_stock):
+        return self.sql_query(f"""
+        INSERT INTO Products
+        (ProductName, UnitPrice, UnitsInStock)
+        VALUES
+        ('{product_name}', '{product_price}', '{product_stock}')""")
