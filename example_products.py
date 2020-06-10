@@ -1,4 +1,4 @@
-from oop_connection import MSDBconnection
+from example_connection import MSDBconnection
 
 
 class DBProduct_table(MSDBconnection):
