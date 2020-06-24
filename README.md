@@ -44,9 +44,6 @@ print(northwindsub.fetch_by_product_id(5))
 
 print(northwindsub.fetch_all())
 ```
-#### - Update
-
-#### - Delete
 
 
 
